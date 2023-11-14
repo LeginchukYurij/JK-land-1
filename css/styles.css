@@ -7822,14 +7822,14 @@ textarea {
   text-align: -o-center
 }
 
-.header-up__menu,
+/* .header-up__menu,
 .menu-collapse,
 .menu-opened,
 .header-up__menu2,
 .menu-collapse2,
 .menu-opened2 {
   transition: all 1s ease
-}
+} */
 
 .menu-opened ul,
 .menu-opened2 ul {
@@ -12817,7 +12817,7 @@ div.wpcf7-aborte {
   }
 
   .infrastructure-block {
-    width: 220px;
+    width: 100%;
     text-align: right;
     text-align: -webkit-right;
     text-align: -moz-right;
@@ -13196,4 +13196,85 @@ html {
     width: 100%;
     background: rgba(0, 0, 0, .6);
   }
+}
+
+
+.top-title__text {
+  display: none;
+}
+
+
+.top-title__text {
+  display: none;
+}
+
+
+.wood-location .container,
+.wood-specifications .container,
+.wood-infrastructure .container,
+.wood-header .container {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+@media (max-width: 576px) {
+  .wood-specifications__amimate {
+    display: none;
+  }
+
+  .title-line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood-specifications__block {
+    width: 100% !important;
+  }
+
+
+  .wood-location {
+    background-position-x: 0;
+  }
+
+  .wood-location .infrastructure-block_text {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .wood-infrastructure .infrastructure-block_text,
+  .wood-infrastructure .infrastructure-block__info {
+    height: auto !important;
+  }
+
+  .infrastructure-block__info__item {
+    margin-top: 0 !important;
+  }
+
+  .wood-infrastructure {
+    padding-bottom: 60px !important;
+  }
+
+  .wood-specifications__info__item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wood-specifications .wood-button {
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .header-up__menu {
+    animation-name: none !important;
+  }
+
 }
